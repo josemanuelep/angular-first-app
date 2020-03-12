@@ -10,3 +10,6 @@ An important thinng to mentioned is that in the road I coding automated test to 
 In next days when I growing up with angular I think to start to make Unit test and I complement this with the automated tests that I already mentioned.
 
 In little bit words, This project going to have all neccesary to go to production.
+
+## The initial apparience of the app
+![This is the alt-attribute for my image](https://i.imgur.com/s2e3Q7Z.png "An optional title")

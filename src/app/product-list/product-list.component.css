@@ -5,6 +5,12 @@
   border-radius: 10px;
 }
 
+product-main-image {
+  max-width: 100%;
+  height: auto;
+  padding-top: 10px;
+}
+
 /*
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that

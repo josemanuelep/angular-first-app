@@ -1,5 +1,5 @@
 <h2>Products</h2>
-<div *ngFor="let product of products">
+<div class="product-wrapper" *ngFor="let product of products">
   <h3>
     <a [title]="product.name + ' details'">
       {{ product.name }}
@@ -15,6 +15,7 @@
   [product]="product" 
   (notify)="onNotify()">
 </app-product-alerts>
+<img src="img_chania.jpg" width="460" height="345">
 </div>
 <!-- 
 Copyright Google LLC. All Rights Reserved.

@@ -5,10 +5,10 @@
   border-radius: 10px;
 }
 
-product-main-image {
-  max-width: 100%;
-  height: auto;
-  padding-top: 10px;
+
+.btn-share{
+  position: relative;
+  display: block;
 }
 
 /*

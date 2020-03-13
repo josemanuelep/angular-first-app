@@ -4,11 +4,11 @@
   <h3>{{ product.name }}</h3>
   <h4>{{ product.price | currency }}</h4>
   <p>{{ product.description }}</p>
-  <img class="prodcut-main-image" [alt]="product.name" [src]="product.image" width="460" height="345">
-  <button [routerLink]="['/products-buy', productId]">
+  <img class="product-main-image" [alt]="product.name" [src]="product.image" width="460" height="345">
+  <button class="btn" [routerLink]="['/products-buy', productId]">
     Buy
   </button>
-  <button>
+  <button >
     add to car
   </button>
 </div>

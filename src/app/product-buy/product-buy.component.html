@@ -2,10 +2,12 @@
 <h3>You are going to buy the best</h3>
 <div class="product-wrapper" *ngIf="product">
   <h3>{{ product.name }}</h3>
-  <h4>{{ product.price | currency }}</h4>
+  <h4>Price {{ product.price | currency }}</h4>
+  <h4>IVA {{ product.iva | currency }}</h4>
+  <h4>Total  {{ product.iva +product.price| currency }}</h4>
   <p>{{ product.description }}</p>
   <img class="prodcut-main-image" [alt]="product.name" [src]="product.image" width="460" height="345">
-  <button [routerLink]="['/products-buy', productId]">
+  <button>
     Buy
   </button>
   <button>

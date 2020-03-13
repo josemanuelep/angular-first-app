@@ -1,8 +1,14 @@
-<h2>Product Details {{productId}}</h2>
+<h2>Product Details</h2>
 
-<div *ngIf="product">
+<div class="product-wrapper" *ngIf="product">
   <h3>{{ product.name }}</h3>
   <h4>{{ product.price | currency }}</h4>
   <p>{{ product.description }}</p>
-
+  <img class="prodcut-main-image" [alt]="product.name" [src]="product.image" width="460" height="345">
+  <button [routerLink]="['/products-buy', productId]">
+    Buy
+  </button>
+  <button>
+    add to car
+  </button>
 </div>

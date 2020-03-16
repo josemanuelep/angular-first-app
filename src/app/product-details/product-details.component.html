@@ -3,10 +3,10 @@
   <h3 id="prodcut-name" >{{ product.name }}</h3>
   <h4 id="price">Price {{ product.price | currency }}</h4>
   <h4>IVA {{ product.iva | currency }}</h4>
-  <h4>Total {{ product.iva +product.price| currency }}</h4>
+  <h4 id="total">Total {{ product.iva +product.price| currency }}</h4>
   <p>{{ product.description }}</p>
   <img class="prodcut-main-image" [alt]="product.name" [src]="product.image" width="460" height="345">
-  <button (click)="addToCart(product)">
+  <button id="add-car" (click)="addToCart(product)">
     Add to car
   </button>
 </div>

@@ -8,7 +8,6 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
-import { ProductBuyComponent } from './product-buy/product-buy.component';
 import { CartService } from './cart.service';
 import { CartComponent } from './cart/cart.component';
 
@@ -19,7 +18,6 @@ import { CartComponent } from './cart/cart.component';
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
-      { path: 'products-buy/:productId', component: ProductBuyComponent },
        { path: 'cart', component: CartComponent },
     ])
   ],
@@ -29,7 +27,6 @@ import { CartComponent } from './cart/cart.component';
     ProductListComponent,
     ProductAlertsComponent,
     ProductDetailsComponent,
-    ProductBuyComponent,
     CartComponent
   ],
   bootstrap: [ AppComponent ],

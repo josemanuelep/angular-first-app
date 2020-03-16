@@ -6,10 +6,11 @@ export class CartService {
   lot = [];
 
   addToCart(product) {
-    if(!this.items.find(product)){
-      this.items.push(product);
-      this.lot[this.items.indexOf(product)] +=1;
+    if(this.items.find(phone => phone.name === product.name)){
+      console.log(this.lot[0]);
+     this.lot[this.items.indexOf(product)] +=1;
     }else{
+      this.items.push(product);
       this.lot[this.items.indexOf(product)] +=1;
     }
   }

@@ -3,5 +3,5 @@
 <div class="cart-item" *ngFor="let item of items; index as productId">
   <span>{{ item.name }}</span>
   <span>{{ item.price | currency }}</span>
-  <span>{{ lots(productId)}}</span>
+  <span>{{ lots[productId]}}</span>
 </div>

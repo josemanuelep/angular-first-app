@@ -17,9 +17,13 @@ export class CartService {
   getItems() {
     return this.items;
   }
-  
+  getLots(){
+    return this.lot;
+  }
+
   clearCart() {
     this.items = [];
+    this.lot = [];
     return this.items;
   }
 }

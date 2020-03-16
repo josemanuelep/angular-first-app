@@ -7,8 +7,8 @@ export class CartService {
 
   addToCart(product) {
     if(this.items.find(phone => phone.name === product.name)){
-      console.log(this.lot[0]);
      this.lot[this.items.indexOf(product)] +=1;
+     console.log(this.lot[0]);
     }else{
       this.items.push(product);
       this.lot[this.items.indexOf(product)] +=1;

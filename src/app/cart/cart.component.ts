@@ -17,12 +17,12 @@ export class CartComponent implements OnInit {
   ngOnInit() {
     this.items = this.cartService.getItems();
     this.lots = this.cartService.getLots();
-    this.lots.forEach(this.getTotalToPay);
+    this.lots.forEach(function(element, index, array){
+    console.info(element);
+    //this.class.total += (element.price*this.lots[index]);
+  });
     }
 
-  getTotalToPay(element, index, array){
-    console.info(element);
-      //this.total += element.price*this.lots[index];
-  }
+  
 
 }

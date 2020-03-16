@@ -9,6 +9,7 @@ import { CartService } from '../cart.service';
 export class CartComponent implements OnInit {
  items;
  lots;
+ total : number = 0;
   constructor(
       private cartService: CartService
   ) { }
@@ -16,6 +17,12 @@ export class CartComponent implements OnInit {
   ngOnInit() {
     this.items = this.cartService.getItems();
     this.lots = this.cartService.getLots();
+    this.lots.forEach(this.getTotalToPay);
+    }
+
+  getTotalToPay(element, index, array){
+    console.info(element);
+      //this.total += element.price*this.lots[index];
   }
 
 }

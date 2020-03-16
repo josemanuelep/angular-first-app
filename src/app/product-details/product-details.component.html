@@ -1,7 +1,7 @@
 <h2>Product Details</h2>
 <div class="product-wrapper" *ngIf="product">
-  <h3>{{ product.name }}</h3>
-  <h4>Price {{ product.price | currency }}</h4>
+  <h3 id="prodcut-name" >{{ product.name }}</h3>
+  <h4 id="price">Price {{ product.price | currency }}</h4>
   <h4>IVA {{ product.iva | currency }}</h4>
   <h4>Total {{ product.iva +product.price| currency }}</h4>
   <p>{{ product.description }}</p>

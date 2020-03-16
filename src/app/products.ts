@@ -16,7 +16,7 @@ export const products = [
   {
     name: 'Phone Standard',
     price: 299,
-    iva:8.5,
+    iva:9,
     description: '',
     image:'https://www.wholesaleplusltd.com/thumbnail.asp?file=assets/images/wp-a2.jpg&maxx=450&maxy=0'
   }

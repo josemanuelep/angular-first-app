@@ -22,6 +22,7 @@ In next days when I growing up with angular I think to start to make Unit test a
 
 1. Implement unit test for the begginer project.
 2. Implement end to end (E2E) tests.
+    -  [Repo of E2E tests](https://github.com/josemanuelep/my-angular-store-testing-E2E)
 3. Build an a simple API rest to consume it from the front but test this API as well wit automation tests.
 
 In little bit words, This project going to have all neccesary to go to production.

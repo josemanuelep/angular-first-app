@@ -10,7 +10,7 @@ import { Output, EventEmitter } from '@angular/core';
 })
 export class ProductAlertsComponent implements OnInit {
   // when this component is instantiated in a template.
-  @Input('account-id') id: string;
+  @Input('message') msm: string;
   @Input() product;
   @Output() notify = new EventEmitter();
 }

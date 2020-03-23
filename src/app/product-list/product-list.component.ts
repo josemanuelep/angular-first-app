@@ -9,11 +9,14 @@ import { products } from '../products';
 })
 export class ProductListComponent {
   products = products;
-  providers;
- constructor(private providersService: ProvidersService) { }
+  providers ;
+ constructor(private providersService: ProvidersService) { 
+   this.providersService.getProviders();
+   console.warn(this.providers);
+ }
  ngOnInit() {
-     this.providers = this.providersService.getProviders();
-     console.warn(this.providers);
+     
+     
   }
   share() {
     window.alert('The product has been shared!');

@@ -31,7 +31,12 @@ export class CartComponent implements OnInit {
     //this.class.total += (element.price*this.lots[index]);
   });
     }
-
+onSubmit(customerData) {
+    // Process checkout data here
+    this.items = this.cartService.clearCart();
+    this.checkoutForm.reset();
+    console.warn('Your order has been submitted', customerData);
+  }
   
 
 }

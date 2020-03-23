@@ -28,9 +28,13 @@ In next days when I growing up with angular I think to start to make Unit test a
 In little bit words, This project going to have all neccesary to go to production.
 
 ## Usign Open Data of Colombia 
+
 For this exercise, I am usign the open data through an API.
-- [Open data page of Colombiahttps://www.datos.gov.co/Ciencia-Tecnolog-a-e-Innovaci-n/Telefon-a-M-vil-trafico-de-voz-por-proveedor/67wf-gj42)
+
+- [Open data page of Colombia](https://www.datos.gov.co/Ciencia-Tecnolog-a-e-Innovaci-n/Telefon-a-M-vil-trafico-de-voz-por-proveedor/67wf-gj42)
+
 - [The Socrata Open Data API ](https://dev.socrata.com/)
+
 - the URL with query params https://www.datos.gov.co/Ciencia-Tecnolog-a-e-Innovaci-n/Telefon-a-M-vil-trafico-de-voz-por-proveedor/67wf-gj42
 
 ## The initial apparience of the app

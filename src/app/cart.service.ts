@@ -5,6 +5,7 @@ import { HttpClient } from '@angular/common/http';
 export class CartService {
   items = [];
   lot = [];
+  totals : number =0;
 constructor(
     private http: HttpClient
   ) {}
@@ -32,5 +33,13 @@ constructor(
   }
    getShippingPrices() {
     return this.http.get('/assets/shipping.json');
+  }
+  getTotalToPay(carItems, lots){
+    let total = 0;
+    carItems.forEach(function(element, index, array){
+    total = total + (element.price*lots[index]);
+    console.info(total);
+  });
+  return total;
   }
 }

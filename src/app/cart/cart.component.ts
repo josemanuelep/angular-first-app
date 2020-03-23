@@ -26,10 +26,7 @@ export class CartComponent implements OnInit {
   ngOnInit() {
     this.items = this.cartService.getItems();
     this.lots = this.cartService.getLots();
-    this.lots.forEach(function(element, index, array){
-    console.info(element);
-    //this.class.total += (element.price*this.lots[index]);
-  });
+    this.total = this.cartService.getTotalToPay(this.items, this.lots);
     }
 onSubmit(customerData) {
     // Process checkout data here

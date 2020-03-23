@@ -12,10 +12,16 @@ export class CartComponent implements OnInit {
  items;
  lots;
  total : number = 0;
+ checkoutForm;
   constructor(
       private cartService: CartService,
       private formBuilder: FormBuilder,
-  ) { }
+  ) { 
+    this.checkoutForm = this.formBuilder.group({
+      name: '',
+      address: ''
+    });
+  }
 
   ngOnInit() {
     this.items = this.cartService.getItems();

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { ProvidersService } from '../providers.service';
 import { products } from '../products';
 
 @Component({
@@ -9,7 +9,11 @@ import { products } from '../products';
 })
 export class ProductListComponent {
   products = products;
-
+  providers;
+ constructor(private providersService: ProvidersService) { }
+ ngOnInit() {
+     this.providers = this.providersService.getProviders();
+  }
   share() {
     window.alert('The product has been shared!');
   }

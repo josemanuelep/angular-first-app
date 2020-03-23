@@ -4,7 +4,7 @@
   <h4 name="price">Price {{ product.price | currency }}</h4>
   <h4 name="iva">IVA {{ product.iva | currency }}</h4>
   <h4 name="total">Total {{ product.iva +product.price| currency }}</h4>
-  <p name="">{{ product.description }}</p>
+  <p name="description">{{ product.description }}</p>
   <img class="product-main-image" [alt]="product.name" [src]="product.image" width="460" height="345">
   <button id="add-car" (click)="addToCart(product)">
     Add to car

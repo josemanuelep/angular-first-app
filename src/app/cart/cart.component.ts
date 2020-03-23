@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from '../cart.service';
+import { FormBuilder } from '@angular/forms';
+
 
 @Component({
   selector: 'app-cart',
@@ -11,7 +13,8 @@ export class CartComponent implements OnInit {
  lots;
  total : number = 0;
   constructor(
-      private cartService: CartService
+      private cartService: CartService,
+      private formBuilder: FormBuilder,
   ) { }
 
   ngOnInit() {

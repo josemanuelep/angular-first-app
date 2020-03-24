@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ProvidersService } from '../providers.service';
 import { products } from '../products';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-product-list',
@@ -9,15 +10,27 @@ import { products } from '../products';
 })
 export class ProductListComponent {
   products = products;
-  providers ;
- constructor(private providersService: ProvidersService) { 
-   this.providersService.getProviders();
-   console.warn(this.providers);
+  providers =[];
+  url ="https://www.datos.gov.co/resource/67wf-gj42.json?$query=select%20distinct%20proveedor";
+ constructor(
+  private providersService: ProvidersService,
+ private http: HttpClient
+ ) { 
+
  }
  ngOnInit() {
-     
-     
+    this.getProviders();
   }
+   getProviders(){
+      this.http.get(this.url).toPromise().then(data => {
+       for (let key in data){
+            console.log(data[key].proveedor);
+            this.providers.push(data[key].proveedor);
+        }
+            
+    });
+  }
+  
   share() {
     window.alert('The product has been shared!');
   }

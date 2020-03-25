@@ -38,7 +38,7 @@ constructor(
   getTotalToPay(carItems, lots){
     let sum =0;
     carItems.forEach(function(element, index, array){
-      sum = this.totals + (element.price*lots[index]);
+      sum = sum + (element.price*lots[index]);
   });
 
    return this.tot=sum;

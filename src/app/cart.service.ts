@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
 export class CartService {
   items = [];
   lot = [];
-  totals : number =0;
+  tot  =0;
 constructor(
     private http: HttpClient
   ) {}
@@ -29,17 +29,18 @@ constructor(
   clearCart() {
     this.items = [];
     this.lot = [];
+    this.tot =0;
     return this.items;
   }
    getShippingPrices() {
     return this.http.get('/assets/shipping.json');
   }
   getTotalToPay(carItems, lots){
-    let total = 0;
+    let sum =0;
     carItems.forEach(function(element, index, array){
-    total = total + (element.price*lots[index]);
-    console.info(total);
+      sum = this.totals + (element.price*lots[index]);
   });
-  return total;
+
+   return this.tot=sum;
   }
 }

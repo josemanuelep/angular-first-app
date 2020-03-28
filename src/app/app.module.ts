@@ -14,6 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpClientModule } from '@angular/common/http';
 import { ShippingComponent } from './shipping/shipping.component';
 import { ProvidersService } from './providers.service';
+import { HtmlPracticeComponent } from './html-practice/html-practice.component';
 
 @NgModule({
   imports: [
@@ -25,6 +26,7 @@ import { ProvidersService } from './providers.service';
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'cart', component: CartComponent },
       { path: 'shipping', component: ShippingComponent },
+      { path: 'practice', component: HtmlPracticeComponent },
     ])
   ],
   declarations: [
@@ -34,16 +36,11 @@ import { ProvidersService } from './providers.service';
     ProductAlertsComponent,
     ProductDetailsComponent,
     CartComponent,
-    ShippingComponent
+    ShippingComponent,
+    HtmlPracticeComponent
   ],
   bootstrap: [ AppComponent ],
   providers: [CartService, ProvidersService]
 })
 export class AppModule { }
 
-
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at http://angular.io/license
-*/

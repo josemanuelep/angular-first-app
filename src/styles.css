@@ -18,7 +18,7 @@ body {
 }
 
 router-outlet + *  {
-  padding: 0 16px;
+  padding: 0 18px;
 }
 
 /* Text */
@@ -62,7 +62,7 @@ input {
 }
 
 label {
-  font-size: 12px;
+  font-size: 15px;
   font-weight: bold;
   margin-bottom: 4px;
   display: block;

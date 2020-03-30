@@ -36,6 +36,7 @@ For this exercise, I am usign the open data through an API.
 - [The Socrata Open Data API](https://dev.socrata.com/)
 
 - [the URL with query params](https://www.datos.gov.co/resource/67wf-gj42.json?$query=select%20distinct%20proveedor)
+
 ## The initial apparience of the app
 
 ![This is the alt-attribute for my image](https://i.imgur.com/s2e3Q7Z.png "An optional title")

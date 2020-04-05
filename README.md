@@ -1,6 +1,8 @@
 # My angular first App 
 
+
 [![build status](https://github.com/coryrylan/angular-github-actions/workflows/Build/badge.svg)](https://github.com/coryrylan/angular-github-actions/actions)
+
 
 Usign the best Online IDE powered by Visual Studio Code
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-vkwfzw)
